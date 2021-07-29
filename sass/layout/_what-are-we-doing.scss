@@ -1,0 +1,30 @@
+
+.overlay-list {
+   position: relative;
+ }
+ 
+ .affairs-overlay {
+   position: absolute;
+   padding: 27px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 70px;
+   overflow: auto;
+ 
+   background-color: rgba(47, 48, 58, 0.8);
+   font-family: var(--main-font);
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 1.14;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+ 
+   color: #ffffff;
+ }
+ 
+ .affairs {
+   display: flex;
+   justify-content: space-between;
+ }

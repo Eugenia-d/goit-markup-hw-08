@@ -1,0 +1,52 @@
+.team {
+   background: #f5f4fa;
+ }
+ .card-item {
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+   background: #ffffff;
+ }
+ 
+ .team-list {
+   display: flex;
+   margin-top: calc(-1 * var(--card-set-gap));
+   margin-left: calc(-1 * var(--card-set-gap));
+ }
+ 
+ .team-list > .card-item {
+   flex-basis: calc(100% / 4 - var(--card-set-gap));
+   margin-left: var(--card-set-gap);
+   margin-top: var(--card-set-gap);
+ }
+ 
+ .card-content {
+   padding: 30px 32px;
+ }
+ 
+ .name {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   /* identical to box height */
+ 
+   text-align: center;
+   letter-spacing: 0.03em;
+ }
+ .profession {
+   margin-top: 10px;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 1, 19;
+   margin-bottom: 16px;
+   /* identical to box height */
+ 
+   text-align: center;
+   letter-spacing: 0.03em;
+ 
+   color: #757575;
+ }
+ 
+ .photo {
+   border-radius: 0px;
+ }

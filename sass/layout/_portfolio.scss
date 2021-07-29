@@ -1,0 +1,125 @@
+.filter {
+   align-items: center;
+   margin-right: 8px;
+
+   &:nth-child(5n) {
+    margin-right: 0;
+  }
+ }
+ 
+ 
+ 
+ .filter-btn {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   /* identical to box height, or 162% */
+   cursor: pointer;
+   text-align: center;
+   letter-spacing: 0.03em;
+   border: none;
+   border-radius: 4px;
+   padding: 6px 22px;
+ 
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
+       color: #ffffff;
+       background: #2196f3;
+       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+         0px 2px 2px rgba(0, 0, 0, 0.12);
+     }
+ }
+ 
+ .portfolio-list-button {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 34px;
+ }
+ 
+
+ .card-set {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: calc(-1 * var(--card-set-gap));
+   margin-left: calc(-1 * var(--card-set-gap));
+ }
+ 
+ .card {
+   flex-basis: calc(100% / 4 - var(--card-set-gap));
+   margin-left: var(--card-set-gap);
+   margin-top: var(--card-set-gap);
+ }
+ .team-list-img {
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: auto;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(33, 150, 243, 0.9);
+   color: #fff;
+   font-family: var(--main-font);
+ 
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 1.56;
+   /* or 156% */
+ 
+   letter-spacing: 0.03em;
+   padding: 63px 24px;
+ 
+   transform: translateY(100%);
+   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   .card-link:hover &,
+ .card-link:focus & {
+   transform: translateY(0%);
+ }
+ }
+ 
+ 
+ 
+ .text {
+   padding: 20px 24px;
+   border: 1px solid #eeee;
+   border-top: none;
+ }
+ .card-name {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+   color: var(--primary-text-color);
+ }
+ .card-text {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 1.87;
+   /* identical to box height, or 187% */
+ 
+   letter-spacing: 0.03em;
+ 
+   color: #757575;
+ }
+ 
+ .card-link {
+   display: block;
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:focus,
+   &:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+     1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
+ }
+ 
+ 
