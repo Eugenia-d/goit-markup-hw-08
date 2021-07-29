@@ -761,6 +761,11 @@ body {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 1200px) {
+  .doing {
+    display: none;
+  }
+}
 .overlay-list {
   position: relative;
 }
