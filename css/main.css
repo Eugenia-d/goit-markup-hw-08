@@ -854,16 +854,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .team-list {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-  }
-
-  .card- .card-item {
-    width: calc((100% - 60px) / 2);
-    margin-right: var(--card-set-gap);
-  }
-  .card- .card-item:nth-child(4n) {
-    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
