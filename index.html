@@ -23,12 +23,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- HEADER -->
     <!-- <header class="head"> -->
-      <!-- <div class="head__container container">
+    <!-- <div class="head__container container">
         <nav class="navigation">
           <a class="logo header__logo  link" href="./" lang="en"><span class="colortext">Web</span>Studio</a>
           <ul class="menu list">
@@ -119,48 +119,42 @@
               <picture>
                 <source
                   srcset="
-                    ./images/deckstope/what_are_we_doing/computer.webp       1x,
-                    ./images/deckstope/what_are_we_doing/computer@2x.webp    2x
+                    ./images/deckstope/what_are_we_doing/computer.webp    1x,
+                    ./images/deckstope/what_are_we_doing/computer@2x.webp 2x
                   "
                   media="(min-width:1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/deckstope/what_are_we_doing/computer.jpg       1x,
+                    ./images/deckstope/what_are_we_doing/computer.jpg    1x,
                     ./images/deckstope/what_are_we_doing/computer@2x.jpg 2x
                   "
                   media="(min-width:1200px)"
                 />
-                <img
-                  src="./images/deckstope/what_are_we_doing/computer.jpg"
-                  alt="Computer"
-                />
+                <img src="./images/deckstope/what_are_we_doing/computer.jpg" alt="Computer" />
               </picture>
-        
+
               <p class="affairs-overlay">Десктопные приложения</p>
             </li>
             <li class="overlay-list">
               <picture>
                 <source
                   srcset="
-                    ./images/deckstope/what_are_we_doing/phone.webp      1x,
-                    ./images/deckstope/what_are_we_doing/phone@2x.webp    2x
+                    ./images/deckstope/what_are_we_doing/phone.webp    1x,
+                    ./images/deckstope/what_are_we_doing/phone@2x.webp 2x
                   "
                   media="(min-width:1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/deckstope/what_are_we_doing/phone.jpg       1x,
+                    ./images/deckstope/what_are_we_doing/phone.jpg    1x,
                     ./images/deckstope/what_are_we_doing/phone@2x.jpg 2x
                   "
                   media="(min-width:1200px)"
                 />
-                <img
-                  src="./images/deckstope/what_are_we_doing/phone.jpg"
-                  alt="Phone"
-                />
+                <img src="./images/deckstope/what_are_we_doing/phone.jpg" alt="Phone" />
               </picture>
               <p class="affairs-overlay">Мобильные приложения</p>
             </li>
@@ -168,23 +162,20 @@
               <picture>
                 <source
                   srcset="
-                    ./images/deckstope/what_are_we_doing/tablet.webp     1x,
-                    ./images/deckstope/what_are_we_doing/tablet@2x.webp    2x
+                    ./images/deckstope/what_are_we_doing/tablet.webp    1x,
+                    ./images/deckstope/what_are_we_doing/tablet@2x.webp 2x
                   "
                   media="(min-width:1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/deckstope/what_are_we_doing/tablet.jpg       1x,
+                    ./images/deckstope/what_are_we_doing/tablet.jpg    1x,
                     ./images/deckstope/what_are_we_doing/tablet@2x.jpg 2x
                   "
                   media="(min-width:1200px)"
                 />
-                <img
-                  src="./images/deckstope/what_are_we_doing/tablet.jpg"
-                  alt="Tablet"
-                />
+                <img src="./images/deckstope/what_are_we_doing/tablet.jpg" alt="Tablet" />
               </picture>
               <p class="affairs-overlay">Дизайнерские решения</p>
             </li>
@@ -193,19 +184,44 @@
       </section>
 
       <!-- OUR TEAM -->
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list team-list">
             <li class="card-item">
               <div class="card-thumb">
-                <img
-                  class="photo"
-                  src="./images/our_team/igor_demyanenko_img1.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/deckstope/team1.webp 1x, ./images/deckstope/team1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/deckstope/team1.jpg 1x, ./images/deckstope/team1@2x.jpg 2x"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/tablet/team1.webp 1x, ./images/tablet/team1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/tablet/team1.jpg 1x, ./images/tablet/team1@2x.jpg 2x"
+                  />
+
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="./images/mobile/team1.webp 1x, ./images/mobile/team1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="./images/mobile/team1.jpg 1x, ./images/mobile/team1@2x.jpg 2x"
+                  />
+                  <img class="photo" src="./images/tablet/team1.jpg" alt="Игорь Демьяненко" />
+                </picture>
               </div>
               <div class="card-content">
                 <h3 class="name">Игорь Демьяненко</h3>
@@ -244,13 +260,36 @@
             </li>
             <li class="card-item">
               <div class="card-thumb">
-                <img
-                  class="photo"
-                  src="./images/our_team/olga_repina2.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="./images/deckstope/team2.webp 1x, ./images/deckstope/team2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="./images/deckstope/team2.jpg 1x, ./images/deckstope/team2@2x.jpg 2x"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/tablet/team2.webp 1x, ./images/tablet/team2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/tablet/team2.jpg 1x, ./images/tablet/team2@2x.jpg 2x"
+                  />
+                  <source
+                    media="(min-width:480px)"
+                    srcset="./images/mobile/team2.webp 1x, ./images/mobile/team2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:480px)"
+                    srcset="./images/mobile/team2.jpg 1x, ./images/mobile/team2@2x.jpg 2x"
+                  />
+                  <img class="photo" src="./images/mobile/team2.jpg" alt="Ольга Репина" />
+                </picture>
               </div>
               <div class="card-content">
                 <h3 class="name">Ольга Репина</h3>
@@ -379,7 +418,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- REGULAR CUSTOMERS -->
 
       <!-- <section class="section">
@@ -496,7 +535,7 @@
           </ul>
         </div> -->
 
-        <!-- <form class="third block">
+    <!-- <form class="third block">
           <p class="form-footer">Подпишитесь на рассылку</p>
           <label class="form-field">
             <input type="email" class="form-input" name="user-mail" placeholder="E-mail" required />
@@ -569,7 +608,7 @@
               placeholder="Введите текст"
             ></textarea>
           </label> -->
-<!-- 
+    <!-- 
           <label class="chekbox-label">
             <input class="checkbox visually-hidden" type="checkbox" name="topic" value="" />
             <span class="icon"></span>
