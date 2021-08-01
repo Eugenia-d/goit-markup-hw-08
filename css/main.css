@@ -821,9 +821,6 @@ body {
   background: #ffffff;
   margin-bottom: 30px;
 }
-.card-item:nth-child(4n) {
-  margin-bottom: 0;
-}
 
 .name {
   font-weight: 500;
@@ -849,15 +846,9 @@ body {
 }
 
 .card-content {
-  padding: 30px 32px;
+  padding: 30px 122px;
 }
 
-@media screen and (min-width: 768px) {
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 @media screen and (min-width: 1200px) {
   .team-list {
     display: flex;
@@ -869,6 +860,10 @@ body {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
+  }
+
+  .card-content {
+    padding: 30px 32px;
   }
 }
 .title-customers {
