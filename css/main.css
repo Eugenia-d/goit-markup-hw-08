@@ -821,6 +821,9 @@ body {
   background: #ffffff;
   margin-bottom: 30px;
 }
+.card-item:nth-child(4n) {
+  margin-bottom: 0;
+}
 
 .name {
   font-weight: 500;
@@ -828,14 +831,14 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .profession {
-  margin-top: 10px;
+  margin-bottom: 16px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1, 19;
-  margin-bottom: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
@@ -846,9 +849,24 @@ body {
 }
 
 .card-content {
-  padding: 30px 122px;
+  padding: 30px 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .card-item {
+    width: calc((100% - 60px) / 2);
+    margin-right: var(--card-set-gap);
+  }
+  .card-item:nth-child(4n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-list {
     display: flex;
@@ -860,6 +878,7 @@ body {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
+    margin-bottom: 30px;
   }
 
   .card-content {
