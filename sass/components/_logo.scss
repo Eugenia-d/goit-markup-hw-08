@@ -1,22 +1,24 @@
 .logo {
-   font-family: var(--secondary-font);
-   font-weight: bold;
-   font-size: 24px;
-   line-height: 1.16;
-   
-   letter-spacing: 0.03em;
-   color: #000000;
- }
- 
- .header__logo {
-   margin-right: 95px;
- 
- }
+  font-family: var(--font-logo), sans-serif;
+  font-weight: 700;
+  color: var(--color-main);
+  text-decoration: none;
 
- @media screen and (min-width: 1200px) {
-  .logo {
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
-    line-height: 1.2;
-  } 
+    line-height: 1.07;
+    margin-right: 93px;
+  }
 
+  &--blue {
+    color: var(--brand-color);
+  }
+
+  &--white {
+    color: var(--color-wight);
+  }
 }
