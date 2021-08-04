@@ -681,6 +681,10 @@ body {
     color: var(--accent-color);
   }
 
+  .nav-contact__list {
+    margin-bottom: 32px;
+  }
+
   .nav-contact__tel {
     font-style: normal;
     font-weight: 500;
@@ -693,13 +697,31 @@ body {
 
   .social-menu {
     display: flex;
+    margin-right: 10px;
+    padding-left: 25px;
+    margin-bottom: 48px;
   }
 
-  .social-menu__list::after {
+  .nav-contact__list {
+    display: flex;
+  }
+
+  .social-menu__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-menu__link::after {
     content: "";
-    width: 20px;
-    height: 20px;
-    background-color: red;
+    width: 0px;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 .hero {
