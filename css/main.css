@@ -710,7 +710,6 @@ body {
 }
 .mob-menu .mob-contacts__link:hover, .mob-menu .mob-contacts__link:focus {
   color: var(--brand-color);
-  font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
@@ -1028,7 +1027,6 @@ body {
 
 .doing__list {
   display: flex;
-  /* justify-content: space-between; */
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -1077,7 +1075,6 @@ body {
 
 .team__list {
   text-align: center;
-  margin-top: -30px;
 }
 @media screen and (min-width: 768px) {
   .team__list {
