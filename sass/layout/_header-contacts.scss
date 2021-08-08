@@ -1,7 +1,4 @@
 .section-header__contacts {
-  // display: flex;
-  // margin-left: auto;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -50,20 +47,3 @@
   margin-right: 10px;
   fill: currentColor;
 }
-
-// .section-header__link:hover,
-// .section-header__link:focus {
-//   color: $brand-color;
-// }
-
-/*================ вариант 1 =========== */
-/* .section-header__icon {
-  fill: $color-grey;
-  margin-right: 10px;
-}
-.section-header__link:hover .section-header__icon,
-.section-header__link:focus .section-header__icon {
-  fill: $brand-color;
-} */
-
-/*================ вариант 2 =========== */
