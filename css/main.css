@@ -307,6 +307,9 @@ body {
   width: 44px;
   height: 44px;
 }
+.social-list__item:nth-child(-n+3) {
+  margin-right: 10px;
+}
 
 .social-list__link {
   display: flex;
@@ -770,6 +773,10 @@ body {
   fill: var(--brand-color);
 }
 
+.mob-menu__current {
+  color: var(--brand-color);
+}
+
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
@@ -1059,48 +1066,9 @@ body {
   background-color: var(--bgc-lighter);
 }
 
-.team__list {
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-}
-
-.team__item {
-  width: 100%;
-  margin-top: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    flex-basis: calc(100% / 2 - 30px);
-    margin-left: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    flex-basis: calc(100% / 4 - 30px);
-  }
-}
-
 .team__box {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 30px 32px;
   background: var(--color-wight);
-}
-@media screen and (min-width: 1200px) {
-  .team__box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 .team__members {
@@ -1121,6 +1089,38 @@ body {
   color: var(--color-grey);
 }
 
+.team__item {
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item:nth-child(4) {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .team__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .team__item:nth-child(4) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list .team__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
 .clients__list {
   display: flex;
   flex-wrap: wrap;
@@ -1130,7 +1130,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .clients__list {
-    margin-top: -50px;
     flex-wrap: nowrap;
   }
 }
@@ -1271,14 +1270,10 @@ body {
 
 .social-box {
   display: block;
-  height: 80px;
-  width: 206px;
 }
 @media screen and (max-width: 767px) {
   .social-box {
     margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1320,7 +1315,6 @@ body {
 }
 
 .footer__form-box {
-  height: 86px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1342,7 +1336,6 @@ body {
 
 .footer__input {
   width: 100%;
-  height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1381,7 +1374,6 @@ body {
 
 .footer__icon {
   width: 24px;
-  height: 24px;
   margin-left: 10px;
 }
 
@@ -1413,40 +1405,6 @@ body {
   background-color: var(--hover-bnt);
 }
 
-.filter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-bottom: 40px;
-}
-@media screen and (max-width: 767px) {
-  .filter {
-    margin-top: -15px;
-    margin-right: -8px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .filter {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .filter {
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .filter__item {
-    margin-top: 15px;
-    margin-right: 8px;
-  }
-}
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter__btn {
   background-color: var(--bgc-lighter);
   font-weight: 500;
@@ -1466,6 +1424,24 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: 15px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .card__list {
     display: flex;
@@ -1489,14 +1465,16 @@ body {
 }
 
 .card__item {
-  margin-top: 30px;
+  margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card__item:last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .card__item {
-    display: flex;
-    flex-direction: column;
     margin-left: 30px;
+    margin-top: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
 }
